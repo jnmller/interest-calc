@@ -48,6 +48,7 @@ namespace Zinsrechner {
       } catch { }
       dRestschuld = dDarlehen;
 
+      ///adfhgfgh 
       if(( dDarlehen > 0 ) && ( dZinssatz > 0 ) && ( dTilgung > 0 )) {
         //Monatsrate berechnen
         dMonatsrate = Math.Round(dRestschuld * ( dZinssatz + dTilgung ) / 100 / 12, 2);
