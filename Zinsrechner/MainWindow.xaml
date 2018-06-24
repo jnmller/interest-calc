@@ -48,19 +48,19 @@
           <RowDefinition Height="Auto" MinHeight="24" MaxHeight="30"/>
           <RowDefinition Height="Auto" MinHeight="24" MaxHeight="30"/>
         </Grid.RowDefinitions>
-        <Label Grid.Column="0" Grid.Row="0" Content="Höhe Darlehen" FontFamily="Calibri" HorizontalAlignment="Right"/>
+        <Label Grid.Column="0" Grid.Row="0" Content="amount borrowed" FontFamily="Calibri" HorizontalAlignment="Right"/>
         <TextBox x:Name="tbxDarlehen" Grid.Column="1" Grid.Row="0" FontFamily="Calibri" />
         <Label Grid.Column="2" Grid.Row="0" Content="€" FontFamily="Calibri"/>
-        <Label Grid.Column="0" Grid.Row="1" Content="Zinssatz" FontFamily="Calibri" HorizontalAlignment="Right"/>
+        <Label Grid.Column="0" Grid.Row="1" Content="rate percent" FontFamily="Calibri" HorizontalAlignment="Right"/>
         <TextBox x:Name="tbxZinssatz" Grid.Column="1" Grid.Row="1" FontFamily="Calibri" />
         <Label Grid.Column="2" Grid.Row="1" Content="%" FontFamily="Calibri" />
-        <Label Grid.Column="0" Grid.Row="2" Content="Tilgung" FontFamily="Calibri" HorizontalAlignment="Right" />
+        <Label Grid.Column="0" Grid.Row="2" Content="rate of repayment" FontFamily="Calibri" HorizontalAlignment="Right" />
         <TextBox x:Name="tbxTilgungsrate" Grid.Column="1" Grid.Row="2" FontFamily="Calibri" />
         <Label Grid.Column="2" Grid.Row="2" Content="%" FontFamily="Calibri" />
-        <Label Grid.Column="0" Grid.Row="3" Content="Monatsrate" FontFamily="Calibri" HorizontalAlignment="Right" />
+        <Label Grid.Column="0" Grid.Row="3" Content="monthly rate" FontFamily="Calibri" HorizontalAlignment="Right" />
         <TextBox x:Name="tbxMonatsrate" Grid.Column="1" Grid.Row="3" FontFamily="Calibri" IsReadOnly="True"/>
         <Label Grid.Column="2" Grid.Row="3" Content="€" FontFamily="Calibri" />
-        <Button x:Name="btnBerechnen" Grid.ColumnSpan="3" Grid.Row="4" Click="btnBerechnen_Click">Berechnen</Button>
+        <Button x:Name="btnBerechnen" Grid.ColumnSpan="3" Grid.Row="4" Click="btnBerechnen_Click" Content="Calculate"/>
       </Grid>
 
       <DataGrid x:Name="dgvDaten" Grid.Row="2" Height ="400" AutoGenerateColumns="True"/>
